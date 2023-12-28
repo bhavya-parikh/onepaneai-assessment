@@ -1,7 +1,12 @@
 import React from "react";
+import HeaderComponent from "./HeaderComponent";
 
 function ChatComponent() {
-  return <div></div>;
+  return (
+    <div>
+      <HeaderComponent />
+    </div>
+  );
 }
 
 export default ChatComponent;
