@@ -2,17 +2,13 @@ import React from "react";
 import sendIcon from "../assets/img/send-icon.svg";
 import sparkles from "../assets/img/sparkles.png";
 import TagComponent from "./TagComponent";
+import AutoCompleteInputComponent from "./AutoCompleteInputComponent";
 function MessageInputboxComponent() {
   return (
     <>
       <div className=" bg-gradient-to-r from-[#997cb4]  via-[#efa27e] to-[#997cb4] m-2 ml-10 w-[1450px] p-[2px] rounded mt-[40px]">
         <div className="w-full h-[90px]  rounded bg-white">
-          <form className="inline">
-            <input
-              type="text"
-              className="bg-gray-100 w-[1380px] ml-3 mt-2 rounded-md p-1 pl-[10px] "
-            />
-          </form>
+          <AutoCompleteInputComponent />
           <img
             src={sendIcon}
             alt="send message button"

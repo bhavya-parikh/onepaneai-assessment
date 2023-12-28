@@ -4,6 +4,7 @@ import jayaKrishnanAvatar from "./assets/img/man-avatar.webp";
 import aTimeAvatar from "./assets/img/a-time-avatar.jpg";
 import githubLogo from "./assets/img/github-logo.png";
 import kubernetesLogo from "./assets/img/kubernetes-logo.png";
+
 export const users = [
   {
     name: "Jaya Krishnan",
@@ -82,4 +83,12 @@ export const messages = [
     userAvatar: onepaneaiAvatar,
     resourceChanges,
   },
+];
+
+export const suggestions = [
+  "nexust-frontend",
+  "Nexus Saas",
+  "nexus-frontend-deplyment",
+  "vnet-nexussaas-prod-eastus-prod",
+  "Jaya Krishnan",
 ];
