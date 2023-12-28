@@ -3,6 +3,7 @@ import HeaderComponent from "./HeaderComponent";
 import SenderDetailsComponent from "./SenderDetailsComponent";
 import { messages } from "../constants";
 import MessageContentComponent from "./MessageContentComponent";
+import IncidentComponent from "./IncidentComponent";
 
 function ChatComponent() {
   return (
@@ -19,6 +20,21 @@ function ChatComponent() {
             <br />
             <br />
             <MessageContentComponent message={message} />
+            {message.incidents
+              ? message.incidents.map((incident) => {
+                  return (
+                    <>
+                      <IncidentComponent
+                        key={incident.id}
+                        incidentType={incident.incidentType}
+                        incidentMessage={incident.incidentMessage}
+                        incidentPlatform={incident.incidentPlatform}
+                        incidentTime={incident.incidentTime}
+                      />
+                    </>
+                  );
+                })
+              : ""}
           </>
         );
       })}
