@@ -2,6 +2,7 @@ import React from "react";
 import HeaderComponent from "./HeaderComponent";
 import SenderDetailsComponent from "./SenderDetailsComponent";
 import { messages } from "../constants";
+import MessageContentComponent from "./MessageContentComponent";
 
 function ChatComponent() {
   return (
@@ -17,6 +18,7 @@ function ChatComponent() {
             />
             <br />
             <br />
+            <MessageContentComponent message={message} />
           </>
         );
       })}
