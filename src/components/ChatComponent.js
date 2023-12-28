@@ -1,10 +1,13 @@
 import React from "react";
+
 import MessageContentComponent from "./MessageContentComponent";
-import { messages } from "../constants";
 import HeaderComponent from "./HeaderComponent";
 import SenderDetailsComponent from "./SenderDetailsComponent";
 import IncidentComponent from "./IncidentComponent";
 import ResourceChangeComponent from "./ResourceChangeComponent";
+import MessageInputboxComponent from "./MessageInputboxComponent";
+
+import { messages } from "../constants";
 
 function MainComponent() {
   return (
@@ -57,6 +60,8 @@ function MainComponent() {
           </>
         );
       })}
+
+      <MessageInputboxComponent />
     </div>
   );
 }
