@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { suggestions } from "../constants";
 
-function AutoCompleteInputComponent() {
+function AutoCompleteInputComponent({ suggestions }) {
   const [inputValue, setInputValue] = useState("");
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
   const [currentPrefix, setCurrentPrefix] = useState("");
