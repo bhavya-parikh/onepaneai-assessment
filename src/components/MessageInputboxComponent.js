@@ -3,12 +3,14 @@ import sendIcon from "../assets/img/send-icon.svg";
 import sparkles from "../assets/img/sparkles.png";
 import TagComponent from "./TagComponent";
 import AutoCompleteInputComponent from "./AutoCompleteInputComponent";
+import { suggestions } from "../constants";
+
 function MessageInputboxComponent() {
   return (
     <>
       <div className=" bg-gradient-to-r from-[#997cb4]  via-[#efa27e] to-[#997cb4] m-2 ml-10 w-[1450px] p-[2px] rounded mt-[40px]">
         <div className="w-full h-[90px]  rounded bg-white">
-          <AutoCompleteInputComponent />
+          <AutoCompleteInputComponent suggestions={suggestions} />
           <img
             src={sendIcon}
             alt="send message button"
